@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Meta
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Visit North Korea | Geography</title>
+  <meta name="description" content="A brief exploration of North Korea through the eyes of the Supreme Leader.">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700" rel="stylesheet">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/geography.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="js/weather.js"></script>
+
+    <script type="text/javascript">
+    function GetClock(){
+      var tzOffset = +8;
+      var d=new Date();
+      var dx=d.toGMTString();
+      dx=dx.substr(0,dx.length -3);
+      d.setTime(Date.parse(dx))
+      d.setHours(d.getHours()+tzOffset);
+      d.setMinutes(d.getMinutes()+30);
+      var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+      if(nyear<1000) nyear+=1900;
+      var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+      if(nhour==0){ap=" AM";nhour=12;}
+      else if(nhour<12){ap=" AM";}
+      else if(nhour==12){ap=" PM";}
+      else if(nhour>12){ap=" PM";nhour-=12;}
+
+      if(nmin<=9) nmin="0"+nmin;
+      if(nsec<=9) nsec="0"+nsec;
+
+      document.getElementById('clockbox').innerHTML="<h6>"+(nmonth+1)+"/"+ndate+"/"+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"</h6>";
+      }
+
+      window.onload=function(){
+      GetClock();
+      setInterval(GetClock,1000);
+      }
+    </script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <nav id="top">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="North Korean Logo"></a>
+      </div>
+
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="geography.html">Geography</a>
+        <a href="culture.html">Culture</a>
+        <a href="visit.html">Visit</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="hero-geography">
+    <div class="container">
+      <div class="row">
+        <div class="offset-by-one ten columns">
+          <div class="flex">
+            <div>
+              <h5>Capitol</h5>
+              <h6>Pyongyang</h6>
+            </div>
+            <div>
+              <h5>Local Time</h5>
+              <div id="clockbox" style="margin-bottom: 15px;"></div>
+            </div>
+            <div>
+              <h5>Weather</h5>
+              <div id="weather"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row tenmargin">
+      <div class="offset-by-one ten columns">
+        <h2>North Korea has a diverse landscape with encompassing alpines, forests, farmlands, freshwater, and marine ecosystems. North Korea is about the size of the state of New York and is located at roughly the same latitude as Philadelphia, giving it four distinct seasons.</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="twelve columns section-geography tenmargin">
+    </div>
+  </div>
+
+  <div class="wrap" id="topography">
+    <div class="row tenmargin">
+      <div class="six columns">
+        <img src="images/geography/nk-topography.jpg" alt="image">
+      </div>
+
+      <div class="five columns">
+        <h3>Topography</h3>
+        <p>North Korea has a variety of mountains and rivers, and is surrounded by seas on three sides. Mountains cover 79.5% of the land, the highest is Mt. Paektu (2,750 m). Most of the mountains rise on the north and east whereas low plains stretch along the coastline in the west and south.</p>
+      </div>
+    </div>
+
+
+  <div class="container hidephone">
+    <div class="row tenmargin">
+      <div class="offset-by-three three columns">
+        <img src="images/geography/guemgang-san.jpg" alt="image">
+        <p>Guemgang-San</p>
+      </div>
+      <div class="three columns">
+        <img src="images/geography/paektu-mountain.jpg" alt="image">
+        <p>Paektu Mountain</p>
+      </div>
+      <div class="three columns">
+        <img src="images/geography/myohyang-san.jpg" alt="image">
+        <p>Myohyang-San</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row tenmargin">
+    <div class="six columns">
+      <img src="images/geography/nk-climate.jpg" alt="image">
+    </div>
+    <div class="five columns">
+      <h3>Climate</h3>
+      <p>North Korea is blessed with about 2,780 hours of sunlight annually, recording more hours than the other countries lying on the same latitude.There are also distinct dry and rainy seasons. There's a range of different climates from the subtropical on the south coast to the subarctic in the alpine regions of the north.</p>
+    </div>
+  </div>
+</div>
+
+  <!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <a href="#top">↑</a>
+        <h1></h1>
+        <h6>+850 2 381 7980<br>
+        usa@korea-dpr.info</h6>
+      </div>
+    </div>
+  </footer>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+</body>
+</html>

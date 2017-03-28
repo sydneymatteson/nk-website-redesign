@@ -1,0 +1,52 @@
+.hero-geography {
+  height: 75vh;
+  background-image: url(../images/geography/kaesong.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-geography h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.section-geography {
+  height: 40vh;
+  background-image: url(../images/geography/Map_of_Diamond_Mountain_Kumgangsan.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+/* For devices larger than 400px */
+@media (max-width: 750px) {
+  .wrap {
+    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .hidephone {
+    display: none;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}

@@ -1,0 +1,83 @@
+.hero-visit {
+  height: 75vh;
+  background-image: url(../images/visit/nk-fireworks.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-visit h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
+.section-visit {
+  height: 40vh;
+  background-image: url(../images/visit/nk-waterpark.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+  .graybackground {
+    background-color: #f7f7f7;
+  }
+
+  .center {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    font-weight: 400;
+  }
+
+/* For devices larger than 400px */
+@media (max-width: 750px) {
+  .wrap {
+    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .hidephone {
+    display: none;
+  }
+}

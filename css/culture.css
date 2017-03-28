@@ -1,0 +1,44 @@
+.hero-culture {
+  height: 75vh;
+  background-image: url(../images/culture/nk-bowling.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  margin-bottom: 8%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-culture h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.bigboldtext {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: .1em;
+}
+
+.section-culture {
+  height: 40vh;
+  background-image: url(../images/culture/nk-subway.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
+/* For devices larger than 400px */
+@media (max-width: 750px) {
+  .wrap {
+    width: 85%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .hidephone {
+    display: none;
+  }
+}
